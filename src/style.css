@@ -1,0 +1,109 @@
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: antiquewhite;
+}
+header {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	align-items: center;
+	padding: 10px;
+}
+
+.form-container {
+	display: flex;
+
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+}
+.city-form {
+	flex: 2;
+}
+#city {
+	width: 100%;
+	height: 1.5rem;
+	border: none;
+	border-radius: 10px;
+	background-color: rgb(240, 240, 240);
+	padding: 2px;
+}
+nav {
+	justify-self: end;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+}
+.place-and-time {
+	display: flex;
+
+	gap: 1rem;
+	flex-direction: column;
+}
+.main-header {
+	display: flex;
+	gap: 2rem;
+	width: 60%;
+	justify-content: center;
+}
+.condition {
+	flex-direction: column;
+	display: flex;
+	gap: 1rem;
+}
+.main-body {
+	display: grid;
+	/* width: clamp(20%, 30%, 50%); */
+	gap: 50px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-content: center;
+}
+.info-cell-title {
+	font-size: 1.2rem;
+	color: rgb(0, 0, 0);
+}
+.info-cell-value {
+	font-size: 2rem;
+}
+.info-cell {
+	border: 2px solid rgb(155, 155, 155);
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	padding: 1rem;
+	gap: 1rem;
+
+}
+p {
+	margin: 1rem;
+}
+.page-title,
+.city,
+.country,
+.temperature,
+.condition-text {
+	margin: 0;
+	font-style: normal;
+	font-weight: initial;
+}
+.page-title {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.city,
+.temperature {
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+.country,
+.condition-text {
+	font-size: 1.5rem;
+}
+.info-cell > p{
+	margin: 0;
+}
